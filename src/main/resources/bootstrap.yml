@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: nacos-demo
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+        namespace: dev
+        group: FK-GROUP
+        file-extension: yml
+      discovery:
+        group: FK-GROUP
+        server-addr: localhost:8848
+        namespace: dev
+      username: jianmin
+      password: xyb
+server:
+  port: 8080
