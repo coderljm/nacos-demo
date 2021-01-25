@@ -8,10 +8,15 @@ spring:
         namespace: dev
         group: FK-GROUP
         file-extension: yml
+        config-retry-time: 3
+        config-long-poll-timeout: 3000
+        timeout: 3000
       discovery:
         group: FK-GROUP
         server-addr: localhost:8848
         namespace: dev
+        heart-beat-timeout: 3000
+        ip-delete-timeout: 3000
       username: jianmin
       password: xyb
 server:
